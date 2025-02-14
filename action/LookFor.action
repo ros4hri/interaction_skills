@@ -1,0 +1,16 @@
+std_skills/Meta meta
+
+# List of RDF patterns that identify the entities to look for.
+# Exactly one and same variable is expected in the patterns.
+# If left empty, a default pattern will be used,
+# which depends on the skill provider.
+string[] patterns
+
+---
+std_skills/Result result
+
+# List of entities found matching the patterns.
+string[] found_entities
+
+---
+std_skills/Feedback feedback
