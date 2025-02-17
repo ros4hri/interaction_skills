@@ -31,6 +31,7 @@ find_package(std_skills REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/LookFor.action"
+  "action/AskHumanForHelp.action"
   DEPENDENCIES builtin_interfaces std_skills
 )
 
