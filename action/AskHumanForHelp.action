@@ -1,8 +1,7 @@
 std_skills/Meta meta
 
-# action message for the 'Ask Help' task. 
-string person_id
-string text
+string[] person_ids
+string question_to_human
 ---
 std_skills/Result result
 string value
