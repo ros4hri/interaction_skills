@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.4.0 (2025-05-08)
+------------------
 * replace the single value of the person_id for a list of humans that are seen
 * Contributors: ferrangebelli
 
