@@ -18,8 +18,63 @@
   <exec_depend>rosidl_default_runtime</exec_depend>
 
   <member_of_group>rosidl_interface_packages</member_of_group>
-
   <export>
     <build_type>ament_cmake</build_type>
+    <skill content-type="json">
+      {
+        "id": "ask_human_for_help",
+        "description": "Ask for help to a human",
+        "interface": "action",
+        "default_interface_path": "/skill/ask_human_for_help",
+        "datatype": "interaction_skills/action/AskHumanForHelp",
+        "parameters": [
+          {
+            "name": "person_id",
+            "type": "string array",
+            "description": "The preferred person ids to ask for help. Those humans will be prioritized when asking for help. If left empty, all tracked humans are considered."
+          },
+          {
+            "name": "question_to_human",
+            "type": "string",
+            "description": "The question to ask to the human."
+          }
+        ],
+        "functional_domains": ["interaction"]
+      }
+    </skill>
+    <skill content-type="json">
+      {
+        "id": "look_for_human",
+        "description": "Look for a human",
+        "interface": "action",
+        "default_interface_path": "/skill/look_for_human",
+        "datatype": "interaction_skills/action/LookFor",
+        "parameters": [
+          {
+            "name": "patterns",
+            "type": "string array",
+            description": "List of RDF patterns that identify the tracked human to look for. Exactly one and same variable is expected in the patterns. If left empty, all tracked humans are returned."
+          }
+        ],
+        "functional_domains": ["interaction"]
+      }
+    </skill>
+    <skill content-type="json">
+      {
+        "id": "look_for_object",
+        "description": "Finds known objects",
+        "interface": "action",
+        "default_interface_path": "/skill/look_for",
+        "datatype": "interaction_skills/action/LookFor",
+        "parameters": [
+          {
+            "name": "patterns",
+            "type": "string array",
+            "description": "List of RDF patterns that identify the objects to look for. Exactly one and same variable is expected in the patterns."
+          }
+        ],
+        "functional_domains": ["interaction"]
+      }
+    </skill>
   </export>
 </package>
