@@ -2,6 +2,13 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* enable manifest tests
+* use look_for_object instead of look_for
+* Add the skill manifest for the interaction skills
+* Contributors: Séverin Lemaignan, ferrangebelli
+
 0.4.0 (2025-05-08)
 ------------------
 * replace the single value of the person_id for a list of humans that are seen
