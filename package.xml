@@ -8,7 +8,7 @@
   <license>Apache License 2.0</license>
   <author email="luka.juricic@pal-robotics.com">Luka Juricic</author>
 
-  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
 
   <depend>action_msgs</depend>
@@ -17,7 +17,12 @@
 
   <exec_depend>rosidl_default_runtime</exec_depend>
 
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_cmake_archlint</test_depend>
+
   <member_of_group>rosidl_interface_packages</member_of_group>
+
   <export>
     <build_type>ament_cmake</build_type>
     <skill content-type="json">
@@ -53,7 +58,7 @@
           {
             "name": "patterns",
             "type": "string array",
-            description": "List of RDF patterns that identify the tracked human to look for. Exactly one and same variable is expected in the patterns. If left empty, all tracked humans are returned."
+            "description": "List of RDF patterns that identify the tracked human to look for. Exactly one and same variable is expected in the patterns. If left empty, all tracked humans are returned."
           }
         ],
         "functional_domains": ["interaction"]
