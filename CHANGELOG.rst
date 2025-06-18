@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-06-18)
+------------------
 * enable manifest tests
 * use look_for_object instead of look_for
 * Add the skill manifest for the interaction skills
