@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.2 (2025-06-25)
+------------------
 * refine documentation of skills
 * Contributors: Séverin Lemaignan
 
