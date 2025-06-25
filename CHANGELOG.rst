@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2025-06-25)
+------------------
 * manifests: explicitely set parameters direction
 * Contributors: Séverin Lemaignan
 
