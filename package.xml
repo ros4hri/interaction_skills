@@ -28,21 +28,22 @@
     <skill content-type="json">
       {
         "id": "ask_human_for_help",
-        "description": "Ask for help to a human",
+        "description": "Ask a human for help",
         "interface": "action",
         "default_interface_path": "/skill/ask_human_for_help",
         "datatype": "interaction_skills/action/AskHumanForHelp",
         "parameters": {
             "in": [
               {
-                  "name": "person_id",
-                  "type": "string array",
-                  "description": "The preferred person ids to ask for help. Those humans will be prioritized when asking for help. If left empty, all tracked humans are considered."
-              },
-              {
                   "name": "question_to_human",
                   "type": "string",
+                  "required": true,
                   "description": "The question to ask to the human."
+              },
+              {
+                  "name": "person_id",
+                  "type": "string array",
+                  "description": "The preferred person IDs to ask for help. Those humans will be prioritized when asking for help. If left empty, all tracked humans are considered."
               }
           ]},
         "functional_domains": ["interaction", "communication"]
@@ -51,7 +52,7 @@
     <skill content-type="json">
       {
         "id": "look_for_human",
-        "description": "Look for a human",
+        "description": "Search and localize specific humans",
         "interface": "action",
         "default_interface_path": "/skill/look_for_human",
         "datatype": "interaction_skills/action/LookFor",
@@ -60,7 +61,8 @@
               {
                 "name": "patterns",
                 "type": "string array",
-                "description": "List of RDF patterns that identify the tracked human to look for. Exactly one and same variable is expected in the patterns. If left empty, all tracked humans are returned."
+                "default": [],
+                "description": "List of RDF patterns that identify the human to look for. Exactly one variable is expected in the patterns. If left empty, all visible humans are returned."
               }
         ]},
         "functional_domains": ["interaction"]
@@ -69,7 +71,7 @@
     <skill content-type="json">
       {
         "id": "look_for_object",
-        "description": "Finds known objects",
+        "description": "Search and localize specific objects",
         "interface": "action",
         "default_interface_path": "/skill/look_for_object",
         "datatype": "interaction_skills/action/LookFor",
@@ -78,7 +80,8 @@
             {
               "name": "patterns",
               "type": "string array",
-              "description": "List of RDF patterns that identify the objects to look for. Exactly one and same variable is expected in the patterns."
+              "default": [],
+              "description": "List of RDF patterns that identify the objects to look for. Exactly one variable is expected in the patterns."
             }
         ]},
         "functional_domains": ["interaction"]
