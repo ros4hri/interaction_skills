@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* manifests: explicitely set parameters direction
+* Contributors: Séverin Lemaignan
+
 1.0.0 (2025-06-18)
 ------------------
 * enable manifest tests
