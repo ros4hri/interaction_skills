@@ -32,18 +32,19 @@
         "interface": "action",
         "default_interface_path": "/skill/ask_human_for_help",
         "datatype": "interaction_skills/action/AskHumanForHelp",
-        "parameters": [
-          {
-            "name": "person_id",
-            "type": "string array",
-            "description": "The preferred person ids to ask for help. Those humans will be prioritized when asking for help. If left empty, all tracked humans are considered."
-          },
-          {
-            "name": "question_to_human",
-            "type": "string",
-            "description": "The question to ask to the human."
-          }
-        ],
+        "parameters": {
+            "in": [
+              {
+                  "name": "person_id",
+                  "type": "string array",
+                  "description": "The preferred person ids to ask for help. Those humans will be prioritized when asking for help. If left empty, all tracked humans are considered."
+              },
+              {
+                  "name": "question_to_human",
+                  "type": "string",
+                  "description": "The question to ask to the human."
+              }
+          ]},
         "functional_domains": ["interaction"]
       }
     </skill>
@@ -54,13 +55,14 @@
         "interface": "action",
         "default_interface_path": "/skill/look_for_human",
         "datatype": "interaction_skills/action/LookFor",
-        "parameters": [
-          {
-            "name": "patterns",
-            "type": "string array",
-            "description": "List of RDF patterns that identify the tracked human to look for. Exactly one and same variable is expected in the patterns. If left empty, all tracked humans are returned."
-          }
-        ],
+        "parameters": {
+            "in": [
+              {
+                "name": "patterns",
+                "type": "string array",
+                "description": "List of RDF patterns that identify the tracked human to look for. Exactly one and same variable is expected in the patterns. If left empty, all tracked humans are returned."
+              }
+        ]},
         "functional_domains": ["interaction"]
       }
     </skill>
@@ -71,13 +73,14 @@
         "interface": "action",
         "default_interface_path": "/skill/look_for_object",
         "datatype": "interaction_skills/action/LookFor",
-        "parameters": [
-          {
-            "name": "patterns",
-            "type": "string array",
-            "description": "List of RDF patterns that identify the objects to look for. Exactly one and same variable is expected in the patterns."
-          }
-        ],
+        "parameters": {
+          "in": [
+            {
+              "name": "patterns",
+              "type": "string array",
+              "description": "List of RDF patterns that identify the objects to look for. Exactly one and same variable is expected in the patterns."
+            }
+        ]},
         "functional_domains": ["interaction"]
       }
     </skill>
