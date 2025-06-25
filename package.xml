@@ -45,7 +45,7 @@
                   "description": "The question to ask to the human."
               }
           ]},
-        "functional_domains": ["interaction"]
+        "functional_domains": ["interaction", "communication"]
       }
     </skill>
     <skill content-type="json">
