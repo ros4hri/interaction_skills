@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* mark ask_human_for_help as a communication skill as well
+* Contributors: Séverin Lemaignan
+
 1.1.0 (2025-06-25)
 ------------------
 * manifests: explicitely set parameters direction
