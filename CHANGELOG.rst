@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* refine documentation of skills
+* Contributors: Séverin Lemaignan
+
 1.1.1 (2025-06-25)
 ------------------
 * mark ask_human_for_help as a communication skill as well
