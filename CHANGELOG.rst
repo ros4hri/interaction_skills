@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* specify the 'set_expression' skill
+* Contributors: Séverin Lemaignan
+
 1.1.2 (2025-06-25)
 ------------------
 * refine documentation of skills
