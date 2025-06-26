@@ -104,9 +104,10 @@
             - name: expression.expression
               type: string
               description: |
-                Name of the expression.
+                Name of the expression. See :ref:`list_eyes_expressions` for details.
 
                 One of:
+
                 - neutral
                 - angry
                 - sad
