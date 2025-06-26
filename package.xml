@@ -14,6 +14,7 @@
   <depend>action_msgs</depend>
   <depend>builtin_interfaces</depend>
   <depend>std_skills</depend>
+  <depend>hri_msgs</depend>
 
   <exec_depend>rosidl_default_runtime</exec_depend>
 
@@ -86,6 +87,59 @@
         ]},
         "functional_domains": ["interaction"]
       }
+    </skill>
+    <skill content-type="yaml">
+    id: set_expression
+    description: |
+      Sets the expression of the robot. This might include changing the robot's face, body posture, or other expressive features.
+
+      One either sets the expression by name, or by specifying the valence and arousal of the expression.
+    interface: topic
+    default_interface_path: /skill/set_expression
+    datatype: interaction_skills/msg/SetExpression
+    functional_domains:
+        - interaction
+    parameters:
+          in:
+            - name: expression.expression
+              type: string
+              description: |
+                Name of the expression.
+
+                One of:
+                - neutral
+                - angry
+                - sad
+                - happy
+                - surprised
+                - disgusted
+                - scared
+                - pleading
+                - vulnerable
+                - despaired
+                - guilty
+                - disappointed
+                - embarrassed
+                - horrified
+                - skeptical
+                - annoyed
+                - furious
+                - suspicious
+                - rejected
+                - bored
+                - tired
+                - asleep
+                - confused
+                - amazed
+                - excited
+            - name: expression.valence
+              type: float
+              description: |
+                The desired valence of the expression, ranging from -1 (very negative) to 1 (very positive).
+            - name: expression.arousal
+              type: float
+              description: |
+                The desired arousal of the expression, ranging from -1 (very calm) to 1 (very excited).
     </skill>
   </export>
 </package>
