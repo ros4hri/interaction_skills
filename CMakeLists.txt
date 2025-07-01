@@ -19,10 +19,11 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/LookFor.action"
   "action/AskHumanForHelp.action"
+  "action/LookAt.action"
+  "action/LookFor.action"
   "msg/SetExpression.msg"
-  DEPENDENCIES builtin_interfaces std_skills hri_msgs
+  DEPENDENCIES builtin_interfaces std_skills hri_msgs geometry_msgs
 )
 
 ament_export_dependencies(rosidl_default_runtime)

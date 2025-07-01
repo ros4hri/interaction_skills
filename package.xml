@@ -15,6 +15,7 @@
   <depend>builtin_interfaces</depend>
   <depend>std_skills</depend>
   <depend>hri_msgs</depend>
+  <depend>geometry_msgs</depend>
 
   <exec_depend>rosidl_default_runtime</exec_depend>
 
@@ -141,6 +142,44 @@
               type: float
               description: |
                 The desired arousal of the expression, ranging from -1 (very calm) to 1 (very excited).
+    </skill>
+    <skill content-type="yaml">
+    id: look_at
+    description: |
+      Defines the gazing direction of the robot. This skill can be used to either look at a specific point 
+      in space (a ROS :term:`tf frame`), or to set a generic gaze policy, such as looking at
+      people around the robot.
+
+      Using the ``glance`` policy, you can also use this skill to brielfy look at
+      a specific point in space, before returning to the previous gaze policy.
+
+    interface: action
+    default_interface_path: /skill/look_at
+    datatype: interaction_skills/action/LookAt
+    functional_domains:
+        - interaction
+    parameters:
+          in:
+            - name: policy
+              type: string
+              description: |
+                One of the policies below, or empty string (in that case, the
+                robot will look atpoint in space specified with the ``target`` parameter).
+
+                Available policies:
+                - ``random``: randomly look around, with short fixations
+                - ``social``: look around for faces, with fixations on detected faces
+                - ``glance``: glance at a specific point in space, then return
+                  to the previous gaze policy. ``target`` must be specified.
+                - ``auto``: automatic gaze policy, implementation-dependent.
+                  On PAL interactive robots, equivalent to ``social``.
+                - ``reset``: reset the gaze of the robot to looking straight.
+
+            - name: target
+              type: :msg:`geometry_msgs/PointStamped`
+              description: |
+                :term:`tf frame` to track. Ignored if the ``policy`` parameter
+                is set to one of the predefined policies.
     </skill>
   </export>
 </package>
