@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.1 (2025-07-02)
+------------------
 * minor doc formatting
 * Contributors: Séverin Lemaignan
 
