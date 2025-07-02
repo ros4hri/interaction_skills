@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.2 (2025-07-02)
+------------------
 * minor: fix typo in documentation
 * Contributors: Séverin Lemaignan
 
