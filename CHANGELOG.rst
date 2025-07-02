@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* minor: fix typo in documentation
+* Contributors: Séverin Lemaignan
+
 1.3.1 (2025-07-02)
 ------------------
 * minor doc formatting
