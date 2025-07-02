@@ -167,6 +167,7 @@
                 robot will look atpoint in space specified with the ``target`` parameter).
 
                 Available policies:
+
                 - ``random``: randomly look around, with short fixations
                 - ``social``: look around for faces, with fixations on detected faces
                 - ``glance``: glance at a specific point in space, then return
