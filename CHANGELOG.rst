@@ -2,6 +2,12 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add definition of look_at skill
+* minor fix in set_expression skill documentation
+* Contributors: Séverin Lemaignan
+
 1.2.0 (2025-06-26)
 ------------------
 * specify the 'set_expression' skill
