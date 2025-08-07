@@ -20,10 +20,12 @@ ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/AskHumanForHelp.action"
+  "action/DoLedEffect.action"
   "action/LookAt.action"
   "action/LookFor.action"
+  "msg/LedColor.msg"
   "msg/SetExpression.msg"
-  DEPENDENCIES builtin_interfaces std_skills hri_msgs geometry_msgs
+  DEPENDENCIES builtin_interfaces geometry_msgs hri_msgs std_msgs std_skills
 )
 
 ament_export_dependencies(rosidl_default_runtime)

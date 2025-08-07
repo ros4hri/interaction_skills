@@ -51,6 +51,79 @@
         "functional_domains": ["interaction", "communication"]
       }
     </skill>
+    <skill content-type="yaml">
+    id: do_led_effect
+    description: Perform light effects using the robot's LEDs.
+    interface: action
+    default_interface_path: /skill/do_led_effect
+    datatype: interaction_skills/action/DoLedEffect
+    functional_domains:
+        - interaction
+    parameters:
+          in:
+            - name: led_groups
+              type: string array
+              default: []
+              description: |
+                The LED groups to use for the effect. Available LED groups can be listed from ...[add parameter]
+                An empty list means the effect is applied to all LED groups.
+            - name: effect_type
+              type: string
+              default: solid_color
+              description: |
+                The selected LED effect, one of:
+                - ``solid_color``:
+                  Applies up to two solid colors side-by-side to the specified LED groups,
+                  with the primary color applied to the first partition of the LED group,
+                  and the secondary color applied to the second partition.
+                - ``rainbow``: 
+                  Lights the LED groups in a rainbow effect,
+                  which moves through the LED group cyclically.
+                - ``fade``:
+                  Fades between two colors cyclically.
+                  It starts with the primary color,
+                  fades to the secondary color over the first partition,
+                  then fades back to the primary color over the second partition.
+                - ``blink``:
+                  Blinks the LED groups between two colors.
+                  It applies a solid primary color in the first partition of a cycle,
+                  then applies a solid secondary color in the second partition.
+                - ``flow``:
+                  Displays a loading-like effect,
+                  with the partition ratio of LEDs colored with the primary color moving through the LED group,
+                  at a constant speed such to traverse the entire LED group in one cycle,
+                  and the secondary color filling the rest of the LED group. 
+            - name: color
+              type: :msg:`interaction_skills/msg/Color`
+              description: |
+                The primary color for the effect.
+                Ignored for the ``rainbow`` effect.
+            - name: secondary_color
+              type: :msg:`interaction_skills/msg/Color`
+              description: |
+                The secondary color for the effect.
+                Ignored for the ``rainbow`` effect.
+            - name: cycle
+              type: float
+              description: |
+                Duration in seconds of a single cycle of the effect.
+                Ignored for the ``solid_color`` effect.
+            - name: loops
+              type: int
+              default: 0
+              description: |
+                Number of times each effect cycle is repeated before the action is completed.
+                Zero (0) means the action continues indefinitely until canceled.
+                Ignored for the ``solid_color`` effect.
+            - name: partition
+              type: float
+              default: 1.0
+              description: |
+                For effects with two phases in a cycle
+                (or two spatially separated partitions as in ``solid_color``),
+                the proportion of the first one ([0., 1.])
+                Ignored for the ``rainbow`` effect.
+    </skill>
     <skill content-type="json">
       {
         "id": "look_for_human",
