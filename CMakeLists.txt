@@ -15,6 +15,13 @@
 cmake_minimum_required(VERSION 3.8)
 project(interaction_skills)
 
+# The following flag is used to disable the [-Wfloat-equal] Warning.
+# A package named with a _msgs (or _interfaces) suffix is conventionally an "interface package".
+# It usually contains only .msg, .srv, and .action files and no custom C++ source code in a src/ directory.
+# As such, given that this package doesn't include the _msgs suffix, the build system might not be able to
+# automatically determine that it is an interface package.
+set(DISABLE_PAL_FLAGS true)
+
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
