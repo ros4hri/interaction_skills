@@ -2,6 +2,12 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* manually disable PAL_FLAGS to avoid failing on Wfloat comparisons
+* add led effects skills
+* Contributors: Luka Juricic, Séverin Lemaignan
+
 1.3.2 (2025-07-02)
 ------------------
 * minor: fix typo in documentation
