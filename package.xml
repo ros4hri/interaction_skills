@@ -61,13 +61,13 @@
         - interaction
     parameters:
           in:
-            - name: led_groups
+            - name: groups
               type: string array
               default: []
               description: |
                 The LED groups to use for the effect. Available LED groups can be listed from ...[add parameter]
                 An empty list means the effect is applied to all LED groups.
-            - name: effect_type
+            - name: effect
               type: string
               default: solid_color
               description: |
@@ -93,6 +93,12 @@
                   with the partition ratio of LEDs colored with the primary color moving through the LED group,
                   at a constant speed such to traverse the entire LED group in one cycle,
                   and the secondary color filling the rest of the LED group. 
+            - name: duration
+              type: float
+              default: 0.0
+              description: |
+                Total duration of the effect before the action is completed.
+                A null or negative number will mean the action continues indefinitely until canceled.
             - name: color
               type: :msg:`interaction_skills/msg/Color`
               description: |
@@ -105,15 +111,9 @@
                 Ignored for the ``rainbow`` effect.
             - name: cycle
               type: float
+              default: 1.0
               description: |
                 Duration in seconds of a single cycle of the effect.
-                Ignored for the ``solid_color`` effect.
-            - name: loops
-              type: int
-              default: 0
-              description: |
-                Number of times each effect cycle is repeated before the action is completed.
-                Zero (0) means the action continues indefinitely until canceled.
                 Ignored for the ``solid_color`` effect.
             - name: partition
               type: float

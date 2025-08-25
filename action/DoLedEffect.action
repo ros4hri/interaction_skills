@@ -1,11 +1,11 @@
 std_skills/Meta meta
 
 # The LED groups to use for the effect.
-# They are identified by their name (e.g., ["left_ear", "right_ear"]).
+# They are identified by their name (e.g., ["ear_leds", "back_leds"]).
 # An empty list means the effect is applied to all LED groups.
 # The list of available LED groups should be exposed by the action server;
 # it is suggested to use a read-only array of strings "led_groups" parameter for this purpose.
-string[] led_groups
+string[] groups
 
 # The selected LED effect.
 string EFFECT_SOLID_COLOR = "solid_color"
@@ -13,7 +13,11 @@ string EFFECT_RAINBOW = "rainbow"
 string EFFECT_FADE = "fade"
 string EFFECT_BLINK = "blink"
 string EFFECT_FLOW = "flow"
-string effect_type "solid_color"
+string effect "solid_color"
+
+# Total duration of the effect before the action is completed.
+# A null or negative number will mean the action continues indefinitely until canceled.
+float32 duration
 
 # Used for effects:
 # - EFFECT_SOLID_COLOR
@@ -35,16 +39,7 @@ interaction_skills/LedColor secondary_color
 # - EFFECT_FADE
 # - EFFECT_BLINK
 # - EFFECT_FLOW
-float32 cycle
-
-# Number of times each effect cycle is repeated before the action is completed.
-# A negative number will mean the action continues indefinitely until canceled.
-# Used for effects:
-# - EFFECT_RAINBOW
-# - EFFECT_FADE
-# - EFFECT_BLINK
-# - EFFECT_FLOW
-int32 loops
+float32 cycle 1.0
 
 # For effects with two phases in a cycle
 # (or two spatially separated partitions as in EFFECT_SOLID_COLOR),
