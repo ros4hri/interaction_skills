@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix some typos/issues in the do_led_effect manifest
+* Contributors: Séverin Lemaignan
+
 1.5.0 (2025-08-26)
 ------------------
 * improve DoLedEffect interface
