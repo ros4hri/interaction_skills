@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.5.1 (2025-08-26)
+------------------
 * fix some typos/issues in the do_led_effect manifest
 * Contributors: Séverin Lemaignan
 
