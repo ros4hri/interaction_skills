@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.5.0 (2025-08-26)
+------------------
 * improve DoLedEffect interface
 * Contributors: Luka Juricic
 

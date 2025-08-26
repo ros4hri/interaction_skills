@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>interaction_skills</name>
-  <version>1.4.0</version>
+  <version>1.5.0</version>
   <description>Interfaces for PAL interaction skills</description>
   <maintainer email="luka.juricic@pal-robotics.com">user</maintainer>
   <license>Apache License 2.0</license>
