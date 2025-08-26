@@ -65,13 +65,14 @@
               type: string array
               default: []
               description: |
-                The LED groups to use for the effect. Available LED groups can be listed from ...[add parameter]
+                The LED groups to use for the effect (eg ``ear_leds``, ``back_leds``).
                 An empty list means the effect is applied to all LED groups.
             - name: effect
               type: string
               default: solid_color
               description: |
                 The selected LED effect, one of:
+
                 - ``solid_color``:
                   Applies up to two solid colors side-by-side to the specified LED groups,
                   with the primary color applied to the first partition of the LED group,
@@ -89,8 +90,8 @@
                   It applies a solid primary color in the first partition of a cycle,
                   then applies a solid secondary color in the second partition.
                 - ``flow``:
-                  Displays a loading-like effect,
-                  with the partition ratio of LEDs colored with the primary color moving through the LED group,
+                  Displays a loading-like effect, with the partition ratio of LEDs colored 
+                  with the primary color moving through the LED group,
                   at a constant speed such to traverse the entire LED group in one cycle,
                   and the secondary color filling the rest of the LED group. 
             - name: duration
@@ -100,12 +101,12 @@
                 Total duration of the effect before the action is completed.
                 A null or negative number will mean the action continues indefinitely until canceled.
             - name: color
-              type: :msg:`interaction_skills/msg/Color`
+              type: :msg:`interaction_skills/msg/LedColor`
               description: |
                 The primary color for the effect.
                 Ignored for the ``rainbow`` effect.
             - name: secondary_color
-              type: :msg:`interaction_skills/msg/Color`
+              type: :msg:`interaction_skills/msg/LedColor`
               description: |
                 The secondary color for the effect.
                 Ignored for the ``rainbow`` effect.
