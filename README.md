@@ -1,7 +1,7 @@
 # interaction_skills
 
 This repo includes ROS 2 skill manifests and message definitions for the
-following communication skills:
+following interaction skills:
 
 - [`ask_human_for_help`](https://github.com/ros4hri/interaction_skills/blob/main/package.xml#L32) [*auto-generated documentation*](https://docs.pal-robotics.com/edge/interaction/skills_list#skill-ask-human-for-help)
 - [`do_led_effect`](https://github.com/ros4hri/interaction_skills/blob/main/package.xml#L55) [*auto-generated documentation*](https://docs.pal-robotics.com/edge/interaction/skills_list#skill-do-led-effect)
@@ -11,4 +11,5 @@ following communication skills:
 - [`look_at`](https://github.com/ros4hri/interaction_skills/blob/main/package.xml#L221) [*auto-generated documentation*](https://docs.pal-robotics.com/edge/interaction/skills_list#skill-look-at)
 
 
-See [package.xml](./package.xml) for the detailed manifests.
+The manifests of each of these skills are defined in the
+[package.xml](./package.xml) package manifest.
