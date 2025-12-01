@@ -30,6 +30,7 @@
     <skill content-type="json">
       {
         "id": "ask_human_for_help",
+        "version": "1.0.0",
         "description": "Ask a human for help",
         "interface": "action",
         "default_interface_path": "/skill/ask_human_for_help",
@@ -53,6 +54,7 @@
     </skill>
     <skill content-type="yaml">
     id: do_led_effect
+    version: 1.0.0
     description: Perform light effects using the robot's LEDs.
     interface: action
     default_interface_path: /skill/do_led_effect
@@ -128,6 +130,7 @@
     <skill content-type="json">
       {
         "id": "look_for_human",
+        "version": "1.0.0",
         "description": "Search and localize specific humans",
         "interface": "action",
         "default_interface_path": "/skill/look_for_human",
@@ -147,6 +150,7 @@
     <skill content-type="json">
       {
         "id": "look_for_object",
+        "version": "1.0.0",
         "description": "Search and localize specific objects",
         "interface": "action",
         "default_interface_path": "/skill/look_for_object",
@@ -165,6 +169,7 @@
     </skill>
     <skill content-type="yaml">
     id: set_expression
+    version: 1.0.0
     description: |
       Sets the expression of the robot. This might include changing the robot's face, body posture, or other expressive features.
 
@@ -219,6 +224,7 @@
     </skill>
     <skill content-type="yaml">
     id: look_at
+    version: 1.0.0
     description: |
       Defines the gazing direction of the robot. This skill can be used to either look at a specific point 
       in space (a ROS :term:`tf frame`), or to set a generic gaze policy, such as looking at
