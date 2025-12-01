@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.7.0 (2025-12-01)
+------------------
 * add version number
 * add github issue templates
 * [doc] minor README improvements
