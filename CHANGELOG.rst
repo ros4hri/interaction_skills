@@ -2,6 +2,14 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add version number
+* add github issue templates
+* [doc] minor README improvements
+* [doc] add links to README
+* Contributors: Séverin Lemaignan
+
 1.6.0 (2025-09-10)
 ------------------
 * ament_auto_package now requires USE_SCOPED_HEADER_INSTALL_DIR
