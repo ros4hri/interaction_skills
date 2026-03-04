@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update maintainer + minor fixes to version declaration (quoting them)
+* Contributors: Séverin Lemaignan
+
 1.7.0 (2025-12-01)
 ------------------
 * add version number
