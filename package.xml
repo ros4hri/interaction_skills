@@ -3,10 +3,11 @@
 <package format="3">
   <name>interaction_skills</name>
   <version>1.7.0</version>
-  <description>Interfaces for PAL interaction skills</description>
-  <maintainer email="luka.juricic@pal-robotics.com">user</maintainer>
+  <description>Interfaces for generic robot interaction skills</description>
+  <maintainer email="severin.lemaignan@iiia.csic.es">Séverin Lemaignan</maintainer>
   <license>Apache License 2.0</license>
   <author email="luka.juricic@pal-robotics.com">Luka Juricic</author>
+  <author email="severin.lemaignan@iiia.csic.es">Séverin Lemaignan</author>
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
@@ -54,7 +55,7 @@
     </skill>
     <skill content-type="yaml">
     id: do_led_effect
-    version: 1.0.0
+    version: "1.0.0"
     description: Perform light effects using the robot's LEDs.
     interface: action
     default_interface_path: /skill/do_led_effect
@@ -169,7 +170,7 @@
     </skill>
     <skill content-type="yaml">
     id: set_expression
-    version: 1.0.0
+    version: "1.0.0"
     description: |
       Sets the expression of the robot. This might include changing the robot's face, body posture, or other expressive features.
 
@@ -224,7 +225,7 @@
     </skill>
     <skill content-type="yaml">
     id: look_at
-    version: 1.0.0
+    version: "1.0.0"
     description: |
       Defines the gazing direction of the robot. This skill can be used to either look at a specific point 
       in space (a ROS :term:`tf frame`), or to set a generic gaze policy, such as looking at
