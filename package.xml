@@ -250,6 +250,7 @@
                 Available policies:
 
                 - ``random``: randomly look around, with short fixations
+                - ``tracking``: look at the target point, and follow it until it is lost or the action is cancelled.
                 - ``social``: look around for faces, with fixations on detected faces
                 - ``glance``: glance at a specific point in space, then return
                   to the previous gaze policy. ``target`` must be specified.
