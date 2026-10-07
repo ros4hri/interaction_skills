@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add constant for look_at TRACKING
+* Contributors: Séverin Lemaignan
+
 1.9.0 (2026-10-07)
 ------------------
 * clarify the 'tracking' semantic for the look_at skill
