@@ -5,6 +5,9 @@ std_skills/Meta meta
 # randomly look around, with short fixations
 string RANDOM="random"
 
+# look at the `target` point, and follow it until it is lost or the action is cancelled.
+string TRACKING="tracking"
+
 # the robot will look around for faces, with fixations on detected faces
 string SOCIAL="social"
 
