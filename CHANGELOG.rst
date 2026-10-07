@@ -2,6 +2,11 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* clarify the 'tracking' semantic for the look_at skill
+* Contributors: Séverin Lemaignan
+
 1.8.0 (2026-03-04)
 ------------------
 * update maintainer + minor fixes to version declaration (quoting them)
