@@ -2,8 +2,8 @@
 Changelog for package interaction_skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.9.1 (2026-10-07)
+------------------
 * add constant for look_at TRACKING
 * Contributors: Séverin Lemaignan
 
